@@ -10,8 +10,7 @@
                         <div >
                             <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    width="NaN%" height="NaN%">
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
                                       d="M0.000,-0.000 L60.000,-0.000 L60.000,3.000 L0.000,3.000 L0.000,-0.000 Z"/>
                             </svg>
@@ -22,8 +21,7 @@
                         </div>
                         <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink"
-                                width="NaN%" height="NaN%">
+                                xmlns:xlink="http://www.w3.org/1999/xlink">
                             <path fill-rule="evenodd"  fill="rgb(255, 255, 255)"
                                   d="M-0.000,-0.001 L280.000,-0.001 L280.000,3.000 L-0.000,3.000 L-0.000,-0.001 Z"/>
                         </svg>
