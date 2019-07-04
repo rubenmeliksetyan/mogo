@@ -10175,13 +10175,12 @@ h3 {
   }
 }
 /* Base */
-body {
+/*body {
   line-height: 1.7;
   color: gray;
   font-weight: 400;
   font-size: 1rem;
-}
-
+}*/
 .nav-link a {
   color: #fff !important;
 }
@@ -10275,7 +10274,7 @@ body {
   right: 0;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
-  font-family: "icomoon";
+  font-family: "Montserrat";
 }
 
 .site-navbar .site-navigation .site-menu .has-children .dropdown {
@@ -12255,7 +12254,8 @@ h1.KaushanScript {
 }
 
 .learnMore {
-  border: #fff;
+  color: #fff;
+  border: 6px solid #fff;
   z-index: 22;
 }
 
@@ -12283,12 +12283,53 @@ h1.KaushanScript {
   z-index: 29;
 }
 
-.Rectangle_4 {
-  background-color: white;
+.What_we_do {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  margin-top: 10%;
+}
+
+.Rectangle_7 {
+  background-color: #95e1d3;
   position: absolute;
-  left: 360px;
-  top: 927px;
-  width: 280px;
-  height: 3px;
-  z-index: 27;
+  left: 0px;
+  top: 1750px;
+  width: 1920px;
+  height: 270px;
+  z-index: 71;
+}
+
+.fact-box {
+  display: block;
+  margin-top: 10%;
+  background-color: #95e1d3;
+  height: 270px;
+  width: auto;
+}
+
+.fact-box-content-number {
+  display: -webkit-box;
+  margin: auto;
+  padding: 10px;
+  font-size: 72px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.fact-box-content-text {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.fact {
+  width: 100%;
+  height: 40%;
+  background: #95e1d3;
 }

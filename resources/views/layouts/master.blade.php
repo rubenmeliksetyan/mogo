@@ -31,10 +31,10 @@
     @include('components.banner')
     @include('components.about')
     @include('components.facts')
-    @include('components.service')
-    @include('components.work')
-    @include('components.blog')
-    @include('components.contact')
+{{--    @include('components.service')--}}
+{{--    @include('components.work')--}}
+{{--    @include('components.blog')--}}
+{{--    @include('components.contact')--}}
 </div>
 
 </body>

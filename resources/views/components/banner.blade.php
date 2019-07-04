@@ -16,14 +16,14 @@
                 </div>
                 <div class="p-2">
                     <a href="#"
-                       class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block">LEARN
-                        MORE</a>
-                </div>
-                <div class="p-2">
-                    <span class="Rectangle_4"></span>
+                       class="btn btn-white btn-outline-white py-3 px-5 rounded-0 mb-lg-0 mb-2 d-block d-sm-inline-block learnMore"> Learn More </a>
                 </div>
 
-
+            </div>
+        </div>
+        <div class="justify-content-center">
+            <div class="p-2">
+                <span class="Rectangle_4">01 intro</span>
             </div>
         </div>
     </div>
