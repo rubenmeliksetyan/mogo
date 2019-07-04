@@ -1,24 +1,24 @@
 <div id="sticky-wrapper" class="sticky-wrapper">
+    <header>
+        <div class="d-flex flex-row-reverse bd-highlight">
 
-    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner" >
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-6 col-xl-2">
-                    <h1 class="mb-0 site-logo"><a href="/" class="text-black mb-0">MoGo</a></h1>
-                </div>
-                <div class="col-12 col-md-10 d-none d-xl-block">
-                    <nav class="site-navigation position-relative text-right" role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                            <li><a href="#about-section" class="nav-link active">ABOUT</a></li>
-                            <li><a href="#service-section" class="nav-link">SERVICE</a></li>
-                            <li><a href="#work-section" class="nav-link">WORK</a></li>
-                            <li><a href="#blog-section" class="nav-link">BLOG</a></li>
-                            <li><a href="#contact-section" class="nav-link">CONTACT</a></li>
-                            <li><a href="#" class="nav-link"><i class="fas fa-search"></i></a></li>
-                            <li><a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="p-2 bd-highlight col-2" ><a href="#" class="nav-link MAGNIFYING_GLASS hover-nav"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="#" class="nav-link SHOPPING_CART hover-nav"><i
+                            class="fas fa-search"></i></a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="#contact-section" class="nav-link contact hover-nav">contact</a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="#blog-section" class="nav-link blog hover-nav">blog</a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="#work-section" class="nav-link work hover-nav">work</a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="#service-section" class="nav-link service hover-nav">service</a>
+            </div>
+            <div class="p-2 bd-highlight"><a href="#about-section" class="nav-link active About hover-nav">about</a>
+            </div>
+            <div class="col-6 col-xl-4"><h1 class="mb-0 site-logo"><a href="/" class="text-black mb-0 MoGo">MoGo</a>
+                </h1>
             </div>
         </div>
     </header>
