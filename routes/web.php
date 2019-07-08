@@ -21,6 +21,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 Route::get('/test', function (){
-   return view('Mobile-First');
+   return view('modal');
 
 });
