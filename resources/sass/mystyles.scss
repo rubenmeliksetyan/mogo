@@ -2179,6 +2179,7 @@ h1.KaushanScript {
 }
 
 .image-about:hover {
+  border-color: $main_blue;
   transform: translate(0, -5px);
 }
 
@@ -2263,11 +2264,10 @@ h1.KaushanScript {
   color: $white;
   text-transform: uppercase;
   text-align: center;
-}
+}image-about
 .fact{
   width: 100%;
   height: 40%;
-  background: $main_blue;
 
 }
 
