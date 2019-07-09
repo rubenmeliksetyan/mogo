@@ -1,0 +1,17 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .12), 0 2px 4px 0 rgba(0, 0, 0, .08);
+    width: 475px;
+    height: 258px;
+}
+
+
+html, body {
+    height: 100%;
+}
+.card-left {
+    background: linear-gradient(to bottom, #21c8f6, #639bff );
+}
+
+.card-skill-button{
+    background: rgba(0,0,0, 0.4);
+}
