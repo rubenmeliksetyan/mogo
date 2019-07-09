@@ -1,22 +1,39 @@
-<div class="d-flex justify-content-center fact">
-    <div class="align-items-center fact-box">
-        <span class="fact-box-content-number col-6">42</span>
-        <span class="fact-box-content-text">Web Design Projects</span>
+<div class="facts">
+
+    <div class="facts-vl"></div>
+
+    <div class="facts-box">
+        <p>42</p>
+        <p>web design projects</p>
     </div>
-    <div class="align-items-center fact-box">
-        <span class="fact-box-content-number col-6">123</span>
-        <span class="fact-box-content-text">happy client</span>
+
+    <div class="facts-vl"></div>
+
+    <div class="facts-box">
+        <p>132</p>
+        <p>happy clients</p>
     </div>
-    <div class="align-items-center fact-box">
-        <span class="fact-box-content-number col-6">15</span>
-        <span class="fact-box-content-text">award winner</span>
+
+    <div class="facts-vl"></div>
+
+    <div class="facts-box">
+        <p>15</p>
+        <p>awards winner</p>
     </div>
-    <div class="align-items-center fact-box">
-        <span class="fact-box-content-number col-6">99</span>
-        <span class="fact-box-content-text">cup of coffee</span>
+
+    <div class="facts-vl"></div>
+
+    <div class="facts-box">
+        <p>99</p>
+        <p>cup of coffee</p>
     </div>
-    <div class="align-items-center fact-box">
-        <span class="fact-box-content-number col-6">24</span>
-        <span class="fact-box-content-text">members</span>
+
+    <div class="facts-vl"></div>
+
+    <div class="facts-box">
+        <p>24</p>
+        <p>members</p>
     </div>
+    <div class="facts-vl"></div>
+
 </div>

@@ -1,25 +1,38 @@
-<div id="sticky-wrapper" class="sticky-wrapper">
-    <header>
-        <div class="d-flex flex-row-reverse bd-highlight">
-
-            <div class="p-2 bd-highlight col-2" ><a href="#" class="nav-link MAGNIFYING_GLASS hover-nav"><i class="fas fa-shopping-cart"></i></a>
-            </div>
-            <div class="p-2 bd-highlight"><a href="#" class="nav-link SHOPPING_CART hover-nav"><i
-                            class="fas fa-search"></i></a>
-            </div>
-            <div class="p-2 bd-highlight"><a href="#contact-section" class="nav-link contact hover-nav">contact</a>
-            </div>
-            <div class="p-2 bd-highlight"><a href="#blog-section" class="nav-link blog hover-nav">blog</a>
-            </div>
-            <div class="p-2 bd-highlight"><a href="#work-section" class="nav-link work hover-nav">work</a>
-            </div>
-            <div class="p-2 bd-highlight"><a href="#service-section" class="nav-link service hover-nav">service</a>
-            </div>
-            <div class="p-2 bd-highlight"><a href="#about-section" class="nav-link active About hover-nav">about</a>
-            </div>
-            <div class="col-6 col-xl-4"><h1 class="mb-0 site-logo"><a href="/" class="text-black mb-0 MoGo">MoGo</a>
-                </h1>
-            </div>
+<header>
+    <div class="header-top">
+        <div class="mogo">
+            <a href="#">MoGo</a>
         </div>
-    </header>
-</div>
+        <nav class="header-links">
+            <a href="#about">about</a>
+            <a href="#service">service</a>
+            <a href="#work">work</a>
+            <a href="">blog</a>
+            <a href="">contact</a>
+            <a href="">contact</a>
+            <a href="">icon</a>
+            <a href="">icon</a>
+        </nav>
+    </div>
+    <div class="container banner">
+        <div class="creative">
+            <p>Creative Template</p>
+        </div>
+        <div class="welcome">
+            <p>welcome to mogo</p>
+
+        </div>
+        <hr>
+
+        <div>
+            <a href="" class="banner-learn">learn more</a>
+        </div>
+        <div class="header-bottom">
+                <a href="">01 intro</a>
+                <a href="">02 work</a>
+                <a href="">03 about</a>
+                <a href="">04 contacts</a>
+        </div>
+
+    </div>
+</header>

@@ -1,19 +1,56 @@
-<div class="site-section" id="service-section">
-    <div class="container">
-        <div class="row align-items-lg-center">
-            <div class="col-md-8 mb-5 mb-lg-0 position-relative">
-                <img src="{{ asset('img/about_1.png') }}" class="img-fluid" alt="Image">
-                <div class="experience">
-                    <span class="year">Trusted Merchant</span>
-                    <span class="caption">for 50 years</span>
-                </div>
+<div class="service" id="service">
+    <div class="service-text about-text">
+        <p>We work with</p>
+        <p>Amazing Services</p>
+        <hr>
+
+    </div>
+    <div class="service-box">
+        <div class="service-box-content">
+            <img src="{{ asset('/img/alarm.png') }}" alt="">
+            <div class="service-box-content-text">
+                <h4>Photography</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
             </div>
-            <div class="col-md-3 ml-auto">
-                <h3 class="section-sub-title">Merchant Company</h3>
-                <h2 class="section-title mb-3">Service Us</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
-                <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p>
+        </div>
+        <div class="service-box-content">
+            <img src="{{ asset('/img/alarm.png') }}" alt="">
+            <div class="service-box-content-text">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            </div>
+        </div>
+        <div class="service-box-content">
+            <img src="{{ asset('/img/alarm.png') }}" alt="">
+            <div class="service-box-content-text">
+                <h4>Creativity</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
             </div>
         </div>
     </div>
+    <hr>
+    <div class="service-box-content">
+        <div class="service-box-content">
+            <img src="{{ asset('/img/alarm.png') }}" alt="">
+            <div class="service-box-content-text">
+                <h4>Photography</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            </div>
+        </div>
+        <div class="service-box-content">
+            <img src="{{ asset('/img/alarm.png') }}" alt="">
+            <div class="service-box-content-text">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            </div>
+        </div>
+        <div class="service-box-content">
+            <img src="{{ asset('/img/alarm.png') }}" alt="">
+            <div class="service-box-content-text">
+                <h4>Creativity</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            </div>
+        </div>
+    </div>
+
 </div>
