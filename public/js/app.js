@@ -36908,7 +36908,9 @@ module.exports = function(module) {
  */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
-__webpack_require__(/*! ./custom */ "./resources/js/custom.js"); // window.Vue = require('vue');
+__webpack_require__(/*! ./custom */ "./resources/js/custom.js");
+
+__webpack_require__(/*! ./myscript */ "./resources/js/myscript.js"); // window.Vue = require('vue');
 
 /**
  * The following block of code may be used to automatically register your
@@ -36994,6 +36996,17 @@ if (token) {
 /*!********************************!*\
   !*** ./resources/js/custom.js ***!
   \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./resources/js/myscript.js":
+/*!**********************************!*\
+  !*** ./resources/js/myscript.js ***!
+  \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 

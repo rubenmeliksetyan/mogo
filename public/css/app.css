@@ -10417,6 +10417,133 @@ hr {
   margin-bottom: 0 !important;
 }
 
+.work-text {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: stretch;
+          justify-content: stretch;
+  height: 100vh;
+  background-image: url(/images/White.png?f767c511881c69442f19d8c5621fcbe6), url("/images/Rectangle 21.png?7666ffec52ba176596e32c6b8ad1c58a"), url("/images/display bg 768x1024.png?51cfd7b91b80457bee85d27ac95e6790");
+  background-repeat: no-repeat;
+  margin-top: 50px;
+}
+
+.contact-head {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+.contact-head-text {
+  width: 954px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-main {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.contact-img {
+  margin-right: 40px;
+  width: 570px;
+  height: 380px;
+  background-image: url("/images/Rectangle 8.png?751e944536cc92fc32d57053783bbc0e");
+}
+
+.contact-content {
+  width: 604px;
+  height: 380px;
+}
+
+.card-link {
+  height: 36px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.linking {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.card-link :last-child {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  align-content: flex-end;
+}
+
+.card-body {
+  height: 195px;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: auto;
+}
+
+.card-body {
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.card-body::-webkit-scrollbar-track {
+  margin: 15px;
+  box-shadow: 0 0 5px whitesmoke;
+  border-radius: 5px;
+}
+.card-body::-webkit-scrollbar-thumb {
+  background: #95e1d3;
+  border-radius: 3px;
+}
+.card-body::-webkit-scrollbar-thumb:hover {
+  background: #fce38a;
+}
+
+.card-header {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.card-header > a {
+  background: transparent;
+}
+
+.accordion {
+  border-radius: 0 !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
