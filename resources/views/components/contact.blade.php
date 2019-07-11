@@ -1,18 +1,83 @@
-<div class="site-section" id="contact-section">
-    <div class="container">
-        <div class="row align-items-lg-center">
-            <div class="col-md-8 mb-5 mb-lg-0 position-relative">
-                <img src="{{ asset('img/about_1.png') }}" class="img-fluid" alt="Image">
-                <div class="experience">
-                    <span class="year">Trusted Merchant</span>
-                    <span class="caption">for 50 years</span>
+<div class="service">
+    <div class="contact-head">
+        <div>
+            <p class="section-bold-first">Service</p>
+            <p class="section-bold-text">What we do</p>
+        </div>
+        <hr>
+        <div class="contact-head-text">
+            <p class="p-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam assumenda atque autem,
+                deserunt dolores eum ex excepturi expedita minima molestias nemo quibusdam ratione recusandae
+                reprehenderit temporibus veritatis vitae voluptas?</p>
+        </div>
+    </div>
+    <div class="contact-main">
+        <div class="contact-img">
+
+        </div>
+        <div class="contact-content">
+            <div id="accordion" class="accordion">
+                <div class="card">
+                    <div class="card-header">
+                        <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                            <img src="{{asset('img/PIC.png')}}">
+                            <p class="card-header-text">Photography</p>
+                            <span class="">&#94;</span>
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-3 ml-auto">
-                <h3 class="section-sub-title">Merchant Company</h3>
-                <h2 class="section-title mb-3">Contact Us</h2>
-                <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui fuga ipsa, repellat blanditiis nihil, consectetur. Consequuntur eum inventore, rem maxime, nisi excepturi ipsam libero ratione adipisci alias eius vero vel!</p>
-                <p><a href="#" class="btn btn-black btn-black--hover rounded-0">Learn More</a></p>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                            <img src="{{asset('img/EQUALIZER.png')}}">
+                            <p class="card-header-text">creativity</p>
+                            <span class="">&#94;</span>
+                        </a>
+                    </div>
+                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                            <img src="{{asset('img/BULLSEYE.png')}}">
+                            <p class="card-header-text">web design</p>
+                            <span class="">&#94;</span>
+                        </a>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent="#accordion">
+                        <div class="card-body">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

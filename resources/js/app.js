@@ -6,6 +6,12 @@
 
 require('./bootstrap');
 require('./custom');
+require('./myscript');
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
 // window.Vue = require('vue');
 /**
  * The following block of code may be used to automatically register your
