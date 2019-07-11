@@ -1,12 +1,12 @@
 <div class="service">
     <div class="contact-head">
         <div>
-            <p>Service</p>
-            <p>What we do</p>
+            <p class="section-bold-first">Service</p>
+            <p class="section-bold-text">What we do</p>
         </div>
         <hr>
         <div class="contact-head-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam assumenda atque autem,
+            <p class="p-title-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam assumenda atque autem,
                 deserunt dolores eum ex excepturi expedita minima molestias nemo quibusdam ratione recusandae
                 reprehenderit temporibus veritatis vitae voluptas?</p>
         </div>
@@ -21,7 +21,7 @@
                     <div class="card-header">
                         <a class="card-link" data-toggle="collapse" href="#collapseOne">
                             <img src="{{asset('img/PIC.png')}}">
-                            <p>Photography</p>
+                            <p class="card-header-text">Photography</p>
                             <span class="">&#94;</span>
                         </a>
                     </div>
@@ -50,7 +50,7 @@
                     <div class="card-header">
                         <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
                             <img src="{{asset('img/EQUALIZER.png')}}">
-                            <p>creativity</p>
+                            <p class="card-header-text">creativity</p>
                             <span class="">&#94;</span>
                         </a>
                     </div>
@@ -66,7 +66,7 @@
                     <div class="card-header">
                         <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
                             <img src="{{asset('img/BULLSEYE.png')}}">
-                            <p>web design</p>
+                            <p class="card-header-text">web design</p>
                             <span class="">&#94;</span>
                         </a>
                     </div>

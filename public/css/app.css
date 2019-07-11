@@ -10540,8 +10540,160 @@ hr {
   background: transparent;
 }
 
-.accordion {
-  border-radius: 0 !important;
+.card-header-text {
+  font-family: "Montserrat";
+  color: black;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.card-body {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.p-title-text {
+  font-family: "Roboto";
+  font-size: 15px;
+  line-height: 1.6;
+  text-align: center;
+  color: #999999;
+}
+
+.section-bold-text {
+  font-family: "Montserrat";
+  font-size: 30px;
+  color: #333333;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Service {
+  color: #333333;
+  position: absolute;
+  left: 925.274px;
+  top: 3627.6px;
+  z-index: 137;
+}
+
+.section-bold-first {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  color: #333333;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.slideshow-container {
+  height: 290px;
+  position: relative;
+  background: #f8f8f8;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #999999;
+  color: white;
+}
+
+.slider-text {
+  font-size: 24px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.author {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  color: #333333;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.slider-img {
+  color: #95e1d3;
+  border: 3px solid #95e1d3;
+  padding: 30px 30px;
+  margin-right: 40px;
+}
+
+.slideshow-container {
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 120px;
+}
+
+q {
+  width: 747px;
+  height: 100px;
+}
+
+.quote-quote {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+.quote-content {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  flex-wrap: wrap;
 }
 
 @tailwind base;

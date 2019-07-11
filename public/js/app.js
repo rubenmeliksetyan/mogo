@@ -36910,7 +36910,13 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./custom */ "./resources/js/custom.js");
 
-__webpack_require__(/*! ./myscript */ "./resources/js/myscript.js"); // window.Vue = require('vue');
+__webpack_require__(/*! ./myscript */ "./resources/js/myscript.js");
+
+$.ajaxSetup({
+  headers: {
+    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+  }
+}); // window.Vue = require('vue');
 
 /**
  * The following block of code may be used to automatically register your
@@ -37010,7 +37016,34 @@ if (token) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-
+// document.getElementsByClassName('prev').addEventListener('click', plusSlides(-1));
+// document.getElementsByClassName('next').addEventListener('click', plusSlides(1));
+// var slideIndex = 1;
+// showSlides(slideIndex);
+//
+// function plusSlides(n) {
+//     showSlides(slideIndex += n);
+// }
+//
+// function currentSlide(n) {
+//     showSlides(slideIndex = n);
+// }
+//
+// function showSlides(n) {
+//     var i;
+//     var slides = document.getElementsByClassName("mySlides");
+//     var dots = document.getElementsByClassName("dot");
+//     if (n > slides.length) {slideIndex = 1}
+//     if (n < 1) {slideIndex = slides.length}
+//     for (i = 0; i < slides.length; i++) {
+//         slides[i].style.display = "none";
+//     }
+//     for (i = 0; i < dots.length; i++) {
+//         dots[i].className = dots[i].className.replace(" active", "");
+//     }
+//     slides[slideIndex-1].style.display = "block";
+//     dots[slideIndex-1].className += " active";
+// }
 
 /***/ }),
 

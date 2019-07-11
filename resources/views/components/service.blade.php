@@ -1,7 +1,7 @@
 <div class="service" id="service">
     <div class="service-text about-text">
-        <p>We work with</p>
-        <p>Amazing Services</p>
+        <p class="section-bold-first">We work with</p>
+        <p class="section-bold-text" >Amazing Services</p>
         <hr>
 
     </div>
