@@ -433,13 +433,12 @@ hr {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: $main_text_color;
+  background-color: $main_white;
   color: white;
 }
 
 
-
-.slider-text{
+.slider-text {
   font-size: 24px;
   font-family: "Roboto";
   color: $main_text_color;
@@ -447,6 +446,7 @@ hr {
   line-height: 1.5;
   text-align: left;
 }
+
 .author {
   font-size: 24px;
   font-family: "KaushanScript";
@@ -455,30 +455,166 @@ hr {
   text-align: left;
 
 }
+
 .slider-img {
   color: $main_blue;
   border: 3px solid $main_blue;
   padding: 30px 30px;
   margin-right: 40px;
 }
+
 .slideshow-container {
   align-items: center;
   margin-top: 120px;
 }
+
 q {
   width: 747px;
   height: 100px;
 }
-.quote-quote{
+
+.quote-quote {
   display: flex;
   align-items: center;
   justify-content: center;
 
 }
-.quote-content{
+
+.quote-content {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   flex-wrap: wrap;
 }
+
+.our-team {
+  margin-top: 80px;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.each-team-player {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.team-member-name {
+  margin-top: 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: $main_section_text_color;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 400;
+}
+
+.team-member-position {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: $main_text_color;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  height: 250px;
+  background-color: #F8F8F8;
+  margin-bottom: 80px;
+}
+
+.logos > img {
+  opacity: 0.8;
+  height: 149px;
+}
+
+//.work-images{
+//  display: flex;
+//  align-items: end;
+//  flex-wrap: wrap;
+//}
+.work-images > img {
+  //vertical-align: middle;
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-head :last-child {
+  background: $main_white !important;
+
+}
+
+.quote-content > q {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+  color: $main_text_color;
+
+}
+
+.quote-content > p {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  text-align: left;
+  color: $main_section_text_color;
+  line-height: 1.2;
+}
+
+.work-quote-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.work-slider-img {
+  padding: 30px;
+}
+
+.happy-clients {
+  background-image: url("../../public/img/wps_background.png");
+}
+.happy-title{
+  font-size: 15px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+  color: $main_section_text_color;
+}
+.happy-name{
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.2;
+  color: $main_section_text_color;
+}
+
 

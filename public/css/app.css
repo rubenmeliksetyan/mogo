@@ -10638,7 +10638,7 @@ hr {
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: #999999;
+  background-color: #ffffff;
   color: white;
 }
 
@@ -10694,6 +10694,150 @@ q {
   -webkit-box-direction: normal;
           flex-direction: column;
   flex-wrap: wrap;
+}
+
+.our-team {
+  margin-top: 80px;
+}
+
+.team {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+          flex-direction: row-reverse;
+}
+
+.each-team-player {
+  margin: 20px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  justify-content: space-around;
+}
+
+.team-member-name {
+  margin-top: 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #333333;
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 400;
+}
+
+.team-member-position {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: #999999;
+  font-style: italic;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.logos {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 80px;
+  height: 250px;
+  background-color: #F8F8F8;
+  margin-bottom: 80px;
+}
+
+.logos > img {
+  opacity: 0.8;
+  height: 149px;
+}
+
+.work-images > img {
+  position: relative;
+  float: left;
+  width: 25%;
+  height: 25%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.work-slider {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.contact-head :last-child {
+  background: #ffffff !important;
+}
+
+.quote-content > q {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+  color: #999999;
+}
+
+.quote-content > p {
+  font-size: 24px;
+  font-family: "KaushanScript";
+  text-align: left;
+  color: #333333;
+  line-height: 1.2;
+}
+
+.work-quote-quote {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+}
+
+.work-slider-img {
+  padding: 30px;
+}
+
+.happy-clients {
+  background-image: url(/images/wps_background.png?849258ce018b902993f345d5057c6024);
+}
+
+.happy-title {
+  font-size: 15px;
+  font-family: "Roboto";
+  font-style: italic;
+  line-height: 1.6;
+  text-align: left;
+  color: #333333;
+}
+
+.happy-name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1.2;
+  color: #333333;
 }
 
 @tailwind base;
