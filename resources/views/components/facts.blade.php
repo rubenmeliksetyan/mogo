@@ -1,39 +1,26 @@
-<div class="facts">
-
-    <div class="facts-vl"></div>
-
-    <div class="facts-box">
-        <p>42</p>
-        <p>web design projects</p>
+<section class="numbers">
+    <div class="container">
+        <div class="flex-wrap-numbers wow fadeInRight">
+            <div class="number">
+                <h2>42</h2>
+                <h3>web design projects</h3>
+            </div>
+            <div class="number">
+                <h2>123</h2>
+                <h3>happy client</h3>
+            </div>
+            <div class="number">
+                <h2>15</h2>
+                <h3>award winner</h3>
+            </div>
+            <div class="number">
+                <h2>99</h2>
+                <h3>cup of coffee</h3>
+            </div>
+            <div class="number">
+                <h2>24</h2>
+                <h3>members</h3>
+            </div>
+        </div>
     </div>
-
-    <div class="facts-vl"></div>
-
-    <div class="facts-box">
-        <p>132</p>
-        <p>happy clients</p>
-    </div>
-
-    <div class="facts-vl"></div>
-
-    <div class="facts-box">
-        <p>15</p>
-        <p>awards winner</p>
-    </div>
-
-    <div class="facts-vl"></div>
-
-    <div class="facts-box">
-        <p>99</p>
-        <p>cup of coffee</p>
-    </div>
-
-    <div class="facts-vl"></div>
-
-    <div class="facts-box">
-        <p>24</p>
-        <p>members</p>
-    </div>
-    <div class="facts-vl"></div>
-
-</div>
+</section>
