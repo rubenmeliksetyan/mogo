@@ -1,4 +1,4 @@
-<section class="services">
+<section class="services" id="service">
     <div class="title__wrapper wow softFadeInUp">
         <h3 class="part-of-h3">What work with</h3>
         <h2 class="part-of-h2">Amazing services</h2>

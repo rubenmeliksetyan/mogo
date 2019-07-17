@@ -2,18 +2,14 @@
 <html>
 
 <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MoGo</title>
     <link href="{{ asset('css/animate.css') }}" rel="stylesheet">
-{{--    <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">--}}
-
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/custom-animations.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.min.css') }}" rel="stylesheet">
-{{--    <link href="{{ asset('css/app.css') }}" rel="stylesheet">--}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ asset('css/all.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -53,7 +49,8 @@
 {{--Footer--}}
 @include('components.footer')
 
-<script src="{{ asset('js/scripts.min.js') }}"></script>
-<script src="{{ asset('js/common.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="{{ asset('js/app.js') }}"></script>
+<script src="{{ asset('js/all.js') }}"></script>
 </body>
 </html>

@@ -6,8 +6,7 @@
 
 require('./bootstrap');
 require('./custom');
-require('./myscript');
-
+require('./common');
 
 $.ajaxSetup({
     headers: {

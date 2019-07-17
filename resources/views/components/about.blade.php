@@ -1,4 +1,4 @@
-<section class="about-us">
+<section class="about-us" id="about">
     <div class="container">
         <div class="title__wrapper wow softFadeInUp">
             <h3 class="part-of-h3">What we do</h3>

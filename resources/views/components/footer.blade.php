@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="container container--footer">
         <div data-wow-delay="0.1s" class="footer__block wow softFadeInRight">
             <div class="logo logo--footer">
@@ -54,8 +54,7 @@
                     <img src="{{ asset('img/boy.png') }}" alt="" class="footer__blog-img">
                     <div class="footer__blog-info">
                         <a href="#">
-                            <h5 class="figcaption-item blog__h5 blog__footer-h5">Margarita Talep develops algae-based
-                                alternative to single-use plastic packaging.</h5>
+                            <h5 class="figcaption-item blog__h5 blog__footer-h5">Margarita Talep develops.</h5>
                         </a>
                         <p class="figcaption-description views__number">Jan 9, 2016</p>
                     </div>

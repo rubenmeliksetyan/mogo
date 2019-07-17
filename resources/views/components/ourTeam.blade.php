@@ -5,8 +5,7 @@
         <div class="line-pink"></div>
     </div>
     <div class="container">
-        <p class="block-description wow fadeIn">Our team - is the best team at this world. All that we do - is the best
-            in the world. Because we are - the world.</p>
+        <p class="block-description wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum explicabo possimus reprehenderit repudiandae. Atque blanditiis, consequatur deleniti dolorem, doloremque illo mollitia nam optio perferendis qui quis repellendus similique soluta ullam! </p>
     </div>
     <div class="container">
         <div class="col-lg-12 flex-wrap team-flex-wrap">

@@ -1,4 +1,4 @@
-<section class="section-unique-design">
+<section class="section-unique-design" id="work">
     <div class="container container--unique-design wow softFadeInUp">
         <h3 class="part-of-h3">For all devices</h3>
         <h2 class="part-of-h2">Unique design</h2>

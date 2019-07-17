@@ -1,4 +1,4 @@
-<section class="what-we-do">
+<section class="what-we-do" id="blog">
     <div class="title__wrapper wow softFadeInUp">
         <h3 class="part-of-h3">Service</h3>
         <h2 class="part-of-h2">What we do</h2>
@@ -27,8 +27,8 @@
                             <h5 class="mb-0" data-parent="#indicators-list" data-target="#myCarousel-2"
                                 data-slide-to="0">
                                 <button class="btn btn-link spoiler" type="button" data-toggle="collapse"
-                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><img
-                                            src="{{ asset('img/PICTURE.png') }}" alt="Picture">
+                                        data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <img src="{{ asset('img/PICTURE.png') }}" alt="Picture">
                                     <p>photography</p>
                                 </button>
                             </h5>
@@ -45,8 +45,8 @@
                             <h5 class="mb-0" data-parent="#indicators-list" data-target="#myCarousel-2"
                                 data-slide-to="1">
                                 <button class="btn btn-link spoiler collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseTwo" aria-controls="collapseTwo"><img
-                                            src="{{ asset('img/EQUALIZER.png') }}" alt="Picture">
+                                        data-target="#collapseTwo" aria-controls="collapseTwo">
+                                    <img src="{{ asset('img/EQUALIZER.png') }}" alt="Picture">
                                     <p>creativity</p>
                                 </button>
                             </h5>
@@ -65,8 +65,8 @@
                             <h5 class="mb-0" data-parent="#indicators-list" data-target="#myCarousel-2"
                                 data-slide-to="2">
                                 <button class="btn btn-link spoiler collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseThree" aria-controls="collapseThree"><img
-                                            src="{{ asset('img/BULLSEYE.png') }}" alt="Picture">
+                                        data-target="#collapseThree" aria-controls="collapseThree">
+                                    <img src="{{ asset('img/BULLSEYE.png') }}" alt="Picture">
                                     <p>choice</p>
                                 </button>
                             </h5>

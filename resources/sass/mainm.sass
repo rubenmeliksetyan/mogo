@@ -1,12 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700)
 
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script)
-
-\::-webkit-input-placeholder, ::-moz-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder, ::placeholder
+$red: #f38181
+$yellow: #fce38a
+$green: #eaffd0
+$blue: #95e1d3
+\::placeholder
   color: #666
 
-\::-moz-selection, ::selection
-  background-color: #95e1d3
+\::selection
+  background-color: $blue
   color: #fff
 
 body
@@ -17,17 +20,13 @@ body
   font-family: Montserrat, sans-serif
   overflow-x: hidden
   color: #333
-
   *
     font-family: Montserrat, sans-serif
-
   input, textarea
     border: #666 1px solid
     outline: 0
-
   input:focus:required:invalid, textarea:focus:required:invalid
     border-color: red
-
   input:required:valid, textarea:required:valid
     border-color: green
 
@@ -55,11 +54,9 @@ body
 
 a
   color: #fff
-
   &:hover
     color: #333
     text-decoration: none
-
   &:focus
     color: #fff
     text-decoration: none
@@ -70,15 +67,11 @@ section
 .gradient
   width: 100%
   height: 100%
-  background: -webkit-linear-gradient(top, rgba(243, 129, 129, 0.85) 0, rgba(243, 129, 129, 0.85) 44%, rgba(252, 227, 138, 0.85) 100%), url(../img/header-bg.png)
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.85)), color-stop(44%, rgba(243, 129, 129, 0.85)), to(rgba(252, 227, 138, 0.85))), url(../img/header-bg.png)
-  background: -o-linear-gradient(top, rgba(243, 129, 129, 0.85) 0, rgba(243, 129, 129, 0.85) 44%, rgba(252, 227, 138, 0.85) 100%), url(../img/header-bg.png)
-  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.85) 0, rgba(243, 129, 129, 0.85) 44%, rgba(252, 227, 138, 0.85) 100%), url(../img/header-bg.png)
+  background: linear-gradient(to bottom, rgba(243, 129, 129, 0.85) 0, rgba(243, 129, 129, 0.85) 44%, rgba(252, 227, 138, 0.85) 100%), url(../../public/img/header-bg.png)
   background-repeat: no-repeat
   min-height: 100vh
   -webkit-background-size: cover
   background-size: cover
-
   h1
     width: 100%
     color: #fff
@@ -89,7 +82,6 @@ section
     font-size: 10.7em
     font-weight: 700
     line-height: .9em
-
   h2
     padding: 17vh 0 1%
     color: #fff
@@ -114,7 +106,7 @@ section
 .line-pink
   width: 67px
   margin: 50px auto
-  border-top: 3px solid #f38181
+  border-top: 3px solid $red
 
 .learn-more
   border: 3px solid #fff
@@ -127,46 +119,24 @@ section
   width: 175px
   text-transform: uppercase
   font-family: Montserrat, sans-serif
-  -webkit-transition: .5s
-  -o-transition: .5s
   transition: .5s
-  -webkit-transition: color .5s border-color .5s
-  -o-transition: color .5s border-color .5s
-  transition: color .5s border-color .5s
-
   &:focus
     outline: 0
-
   &:hover
-    border-color: #fce38a
-    color: #fce38a
-
+    border-color: $yellow
+    color: $yellow
   a
     color: #fff
-    -webkit-transition: .5s
-    -o-transition: .5s
     transition: .5s
-
     &:focus
       outline: 0
 
 .logo
   position: static
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
   width: 10%
-
   h2
     color: #fff
     font-weight: 700
@@ -182,7 +152,6 @@ section
   background: #fff
   display: block
   height: 1px
-  -webkit-border-radius: 4px 4px 4px 4px
   border-radius: 4px 4px 4px 4px
   border: none
 
@@ -192,7 +161,6 @@ section
   background: #fff
   display: block
   height: 1px
-  -webkit-border-radius: 4px 4px 4px 4px
   border-radius: 4px 4px 4px 4px
   border: none
   top: -10px
@@ -210,56 +178,32 @@ section
   position: absolute
   top: 0
   left: 50%
-  -webkit-transform: translate(-50%, 0)
-  -ms-transform: translate(-50%, 0)
   transform: translate(-50%, 0)
   z-index: 500
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
   padding: 20px 0
 
 .navbar
   -webkit-border-radius: 0
   border-radius: 0
-  display: -ms-flex
-  display: -webkit-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: end
-  -webkit-justify-content: flex-end
-  -ms-flex-pack: end
   justify-content: flex-end
   margin: 0
   width: 90%
 
 .navbar-nav
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
   display: -ms-flex
   display: -webkit-flex
   display: -webkit-box
   display: -ms-flexbox
   display: flex
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
   list-style: none
   padding: 0
-
   li
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
     border-bottom: 2px solid transparent
-    -webkit-box-sizing: border-box
     box-sizing: border-box
     display: -ms-flex
     display: -webkit-flex
@@ -267,50 +211,27 @@ section
     display: -ms-flexbox
     display: flex
     height: 100%
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
     margin: 0 30px
     padding: 15px 0
-    -webkit-transition: .5s
-    -o-transition: .5s
     transition: .5s
-
     &:hover
-      border-bottom: 2px solid #fce38a
-      -webkit-box-sizing: border-box
+      border-bottom: 2px solid $yellow
       box-sizing: border-box
-
       a
-        color: #fce38a
-        -webkit-transition: .5s
-        -o-transition: .5s
+        color: $yellow
         transition: .5s
-
     a
-      -webkit-box-align: center
-      -webkit-align-items: center
-      -ms-flex-align: center
       align-items: center
       color: #fff
-      display: -ms-flex
-      display: -webkit-flex
-      display: -webkit-box
-      display: -ms-flexbox
       display: flex
       font-family: Montserrat, sans-serif
       font-size: 1em
       height: 100%
-      -webkit-box-pack: center
-      -webkit-justify-content: center
-      -ms-flex-pack: center
       justify-content: center
       padding: 0 20px
       text-decoration: none
       text-transform: uppercase
-      -webkit-transition: .5s
-      -o-transition: .5s
       transition: .5s
       width: 100%
 
@@ -323,7 +244,6 @@ section
   outline: 0
   background: 0 0
   display: none
-
   .menu-icon-bar
     position: absolute
     left: 15px
@@ -331,40 +251,19 @@ section
     height: 2px
     background-color: #fff
     opacity: 0
-    -webkit-transform: translateY(-1px)
-    -ms-transform: translateY(-1px)
     transform: translateY(-1px)
-    -webkit-transition: all .3s ease-in
-    -o-transition: all .3s ease-in
     transition: all .3s ease-in
-
     &:first-child
       opacity: 1
-      -webkit-transform: translateY(-1px) rotate(45deg)
-      -ms-sform: translateY(-1px) rotate(45deg)
-      -ms-transform: translateY(-1px) rotate(45deg)
       transform: translateY(-1px) rotate(45deg)
-
     &:last-child
       opacity: 1
-      -webkit-transform: translateY(-1px) rotate(135deg)
-      -ms-sform: translateY(-1px) rotate(135deg)
-      -ms-transform: translateY(-1px) rotate(135deg)
       transform: translateY(-1px) rotate(135deg)
-
   &.collapsed .menu-icon-bar
     opacity: 1
-
     &:first-child
-      -webkit-transform: translateY(-7px) rotate(0)
-      -ms-sform: translateY(-7px) rotate(0)
-      -ms-transform: translateY(-7px) rotate(0)
       transform: translateY(-7px) rotate(0)
-
     &:last-child
-      -webkit-transform: translateY(5px) rotate(0)
-      -ms-sform: translateY(5px) rotate(0)
-      -ms-transform: translateY(5px) rotate(0)
       transform: translateY(5px) rotate(0)
 
 #myCarousel
@@ -375,19 +274,16 @@ section
   bottom: 80px
   height: 70px
   margin-bottom: 0
-
   li
     border: none
     height: 3px
     width: 18%
     background: #fff
     margin-right: 30px
-
   .active
     width: 18%
     height: 3px
     margin-right: 30px
-
   li h2
     color: #fff
     line-height: 1.9em
@@ -399,14 +295,12 @@ section
     font-size: 1.3em
     margin-top: 22px
     text-indent: 0
-
     b
       font-size: 1.3em
 
 .about-us
   width: 100%
   background: #fff
-
   h2
     color: #333
     width: 100%
@@ -438,43 +332,23 @@ section
   padding: 0 0
 
 .flex-wrap
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-  -webkit-justify-content: space-around
-  -ms-flex-pack: distribute
   justify-content: space-around
 
 .flex-wrap-numbers
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
   margin: 0 auto
-  -webkit-box-sizing: border-box
   box-sizing: border-box
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
   flex-direction: row
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
 
 .left, .right
   display: none
 
 .numbers
-  background: #95e1d3
+  background: $blue
   width: 100%
   padding: 0
 
@@ -482,17 +356,14 @@ section
   width: 20%
   padding: 3.5% 0
   border-left: 1px solid #fff
-
   &:last-child
     border-right: 1px solid #fff
-
   h2
     text-align: center
     color: #fff
     font-size: 5em
     font-family: Montserrat, sans-serif
     font-weight: 700
-
   h3
     text-align: center
     color: #fff
@@ -503,48 +374,28 @@ section
 .about-us-bs
   position: relative
   height: 250px
-  -webkit-flex-basis: 389px
-  -ms-flex-preferred-size: 389px
   flex-basis: 389px
   max-width: 31.3%
-  background: #f38181
-  -webkit-transform: translate(0, 0)
-  -ms-transform: translate(0, 0)
+  background: $red
   transform: translate(0, 0)
-  -webkit-transition: .4s
-  -o-transition: .4s
   transition: .4s
-  -webkit-box-sizing: border-box
   box-sizing: border-box
-
   &:hover
-    -webkit-transform: translate(-10px, -10px)
-    -ms-transform: translate(-10px, -10px)
     transform: translate(-10px, -10px)
-    -webkit-transition: .4s
-    -o-transition: .4s
     transition: .4s
-
     .block-hover
       opacity: 1
-      -webkit-transition: .5s
-      -o-transition: .5s
       transition: .5s
-
   &:first-child
-    background-image: url(../img/block-1.png)
-
+    background-image: url(../../public/img/block-1.png)
   &:nth-child(2)
-    background-image: url(../img/block-2.png)
+    background-image: url(../../public/img/block-2.png)
     background-position: 0 -150px
-
   &:last-child
-    background-image: url(../img/block-3.png)
+    background-image: url(../../public/img/block-3.png)
     background-position: 0 -1px
-
   &:first-child:hover, &:hover, &:last-child:hover, &:nth-child(2):hover
-    -webkit-box-shadow: 10px 10px 0 0 #95e1d3
-    box-shadow: 10px 10px 0 0 #95e1d3
+    box-shadow: 10px 10px 0 0 $blue
 
 .block-hover
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(243, 129, 129, 0.85)), color-stop(44%, rgba(243, 129, 129, 0.85)), to(rgba(252, 227, 138, 0.85)))
@@ -557,26 +408,11 @@ section
   left: 0
   right: 0
   opacity: 0
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-  -webkit-transition: .5s
-  -o-transition: .5s
   transition: .5s
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-
   h2
     color: #fff
     font-size: 1.3em
@@ -590,32 +426,19 @@ section
   text-align: center
   width: 100%
   font-size: 2em
-
   h2
     font-size: .6em
 
 .services-block
   min-width: 33.333%
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-box-align: stretch
-  -webkit-align-items: stretch
-  -ms-flex-align: stretch
   align-items: stretch
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -webkit-flex-flow: row wrap
-  -ms-flex-flow: row wrap
   flex-flow: row wrap
   border-bottom: 1px solid #ccc
   padding: 0 0 50px 0
-
   img
     width: 32px
     height: 32px
-
   h2
     margin: 0 0 0 20px
     font-size: 1.1em
@@ -623,7 +446,6 @@ section
     text-transform: uppercase
     font-weight: 400
     color: #333
-
   p
     width: 80%
     color: #999
@@ -631,23 +453,9 @@ section
 
 .flex-box
   width: 100%
-  display: -webkit-inline-flex
-  display: -moz-inline-flex
-  display: -ms-inline-flex
-  display: -o-inline-flex
-  display: -webkit-inline-box
-  display: -ms-inline-flexbox
   display: inline-flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
   margin-top: 50px
 
@@ -661,10 +469,10 @@ section
   overflow: visible
 
 .section-unique-design
-  background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/design-bg.png)
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 239, 239, 0.85)), color-stop(44%, rgba(239, 239, 239, 0.85)), to(rgba(239, 239, 239, 0.85))), url(../img/design-bg.png)
-  background: -o-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/design-bg.png)
-  background: linear-gradient(to bottom, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/design-bg.png)
+  background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../../public/img/design-bg.png)
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 239, 239, 0.85)), color-stop(44%, rgba(239, 239, 239, 0.85)), to(rgba(239, 239, 239, 0.85))), url(../../public/img/design-bg.png)
+  background: -o-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../../public/img/design-bg.png)
+  background: linear-gradient(to bottom, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../../public/img/design-bg.png)
   background-repeat: no-repeat
   background-position: 92% 25%
   background-attachment: fixed
@@ -703,14 +511,7 @@ section
   height: 3px
   padding: 0
   cursor: pointer
-  -webkit-background-size: 100% 0
   background-size: 100% 0
-  background-image: -webkit-gradient(linear, left, right, color-stop(1, rgba(243, 129, 129, 0.85)), color-stop(1, transparent))
-  background-image: -o-linear-gradient(left, rgba(243, 129, 129, 0.85) 100%, transparent)
-  background-image: -webkit-linear-gradient(left, rgba(243, 129, 129, 0.85) 100%, transparent)
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, rgba(243, 129, 129, 0.85)), to(transparent))
-  background-image: -webkit-linear-gradient(left, rgba(243, 129, 129, 0.85) 100%, transparent 100%)
-  background-image: -o-linear-gradient(left, rgba(243, 129, 129, 0.85) 100%, transparent 100%)
   background-image: linear-gradient(to right, rgba(243, 129, 129, 0.85) 100%, transparent 100%)
   background-repeat: no-repeat
 
@@ -718,59 +519,40 @@ section
   margin-right: 0
 
 .carousel-indicators ~ li
-  -webkit-background-size: 0 0
   background-size: 0 0
 
 .active
-  -webkit-animation: right 5s ease-in-out forwards
   animation: right 5s ease-in-out forwards
 
 @-webkit-keyframes right
   0%
-    -webkit-background-size: 0 100%
     background-size: 0 100%
 
   100%
-    -webkit-background-size: 100% 100%
     background-size: 100% 100%
 
 
 @keyframes right
   0%
-    -webkit-background-size: 0 100%
     background-size: 0 100%
 
   100%
-    -webkit-background-size: 100% 100%
     background-size: 100% 100%
 
 
 .second-slider
   width: 100%
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
   position: relative
   min-height: 350px
 
 .slider-2-indicators
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-box-orient: vertical
-  -webkit-box-direction: normal
-  -webkit-flex-direction: column
-  -ms-flex-direction: column
   flex-direction: column
   position: relative
   width: 45%
-
   .active, li
     width: 100%
-    -webkit-border-radius: 0
     border-radius: 0
     margin: 1px
   text-align: left
@@ -778,9 +560,7 @@ section
 .panel-group .panel
   + .panel
     margin-top: 10px
-    -webkit-border-radius: 0
     border-radius: 0
-  -webkit-border-radius: 0 !important
   border-radius: 0 !important
   border: 1px solid #e2e2e2
   position: relative
@@ -788,37 +568,22 @@ section
 .item-list
   margin: 12px 0
   font-family: Montserrat, sans-serif
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
 
 .spoiler
   width: 100%
   height: 100%
-
   &:after
-    content: url(../img/arrow.png)
+    content: url(../../public/img/arrow.png)
     position: absolute
     right: 15px
     top: 27px
-    -webkit-transform: rotate(180deg)
-    -ms-transform: rotate(180deg)
     transform: rotate(180deg)
-    -webkit-transition: .3s
-    -o-transition: .3s
     transition: .3s
-
   &.collapsed:after
-    content: url(../img/arrow.png)
+    content: url(../../public/img/arrow.png)
     -webkit-transform: rotate(0)
     -ms-transform: rotate(0)
     transform: rotate(0)
@@ -833,11 +598,8 @@ a .item-list
   img
     height: 25px
     margin: 0 10px
-
   h6
     margin: 15px 0
-    -webkit-align-self: center
-    -ms-flex-item-align: center
     align-self: center
 
 .accordion
@@ -850,41 +612,27 @@ a .item-list
   .card-body
     font-style: italic
     font-size: .9rem
-
   .card-header
     padding: 0
-
     &:focus
       border: none
-
   .btn
-    display: -webkit-flex
-    display: -ms-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
     padding: 26px
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
     color: #333
     text-transform: uppercase
     font-size: .8rem
     background-color: #fff
     border: none
-
     &:hover
       text-decoration: none
-
     &:active, &:focus, &:visited
       text-decoration: none
       outline: 0
       border: none
-
     img
       height: 100%
-
     p
       margin: 0
       margin: 0 10px
@@ -901,45 +649,27 @@ a .item-list
 
 #panel-body
   &::-webkit-scrollbar-track
-    -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3)
-    -webkit-border-radius: 10px
     border-radius: 10px
     background-color: #f5f5f5
-
   &::-webkit-scrollbar
     width: 7px
     background-color: #f5f5f5
-
   &::-webkit-scrollbar-thumb
-    -webkit-border-radius: 10px
     border-radius: 10px
-    background-color: #95e1d3
+    background-color: $blue
 
 .arrows-position
   width: 65%
   position: absolute
   top: 50%
   left: 50%
-  -webkit-transform: translate(-50%, -50%)
-  -ms-transform: translate(-50%, -50%)
   transform: translate(-50%, -50%)
 
 .container--quote
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
 
 .quote-carousel
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
   width: 80%
 
@@ -949,24 +679,14 @@ a .item-list
   position: relative
 
 .description
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
   flex-direction: row
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
 
 .citaiton_img
   margin-right: 50px
   padding: 30px
-  border: 2px #95e1d3 solid
+  border: 2px $blue solid
   height: 100%
 
 .citaiton p
@@ -984,8 +704,6 @@ a .item-list
 .citaiton h4
   margin-bottom: 0
   font-family: "Kaushan Script", cursive
-  -webkit-align-self: flex-start
-  -ms-flex-item-align: start
   align-self: flex-start
   margin-top: -5px
   margin-left: 10px
@@ -1003,30 +721,21 @@ a .item-list
 
 .left.carousel-control-3
   background-image: none
-  -webkit-transform: rotate(90deg)
-  -ms-transform: rotate(90deg)
   transform: rotate(90deg)
 
 .right.carousel-control-3
   background-image: none
-  -webkit-transform: rotate(90deg)
-  -ms-transform: rotate(90deg)
   transform: rotate(90deg)
-  -webkit-transform: rotate(270deg)
-  -ms-transform: rotate(270deg)
   transform: rotate(270deg)
 
 #myCarousel-2
   display: grid
   grid-template-columns: 1fr 1fr
   grid-column-gap: 20px
-
   .carousel-item
     max-height: 400px
-
     img
       width: 100%
-      -o-object-fit: cover
       object-fit: cover
 
 .slider-2-indicators
@@ -1034,9 +743,6 @@ a .item-list
   height: 100%
   width: 100%
   position: static
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
 
 .figcaption-item
@@ -1056,63 +762,36 @@ a .item-list
 .who-we-are-item
   height: 460px
   margin-bottom: 90px
-
   &:first-child
-    background-image: url(../img/Designer.png)
+    background-image: url(../../public/img/Designer.png)
     background-position: -100px -20px
-
   &:nth-child(2)
-    background-image: url(../img/Photographer.png)
+    background-image: url(../../public/img/Photographer.png)
     background-position: 0 0
-
   &:last-child
-    background-image: url(../img/Developer.png)
+    background-image: url(../../public/img/Developer.png)
 
 .social-team
   position: absolute
   top: 50%
   left: 50%
-  -webkit-transform: translate(-50%, -50%)
-  -ms-transform: translate(-50%, -50%)
   transform: translate(-50%, -50%)
-  background: #fce38a
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
+  background: $yellow
   display: flex
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
-
   a
     width: 50px
     height: 50px
     text-align: center
-    border-right: 1px solid #f38181
-    color: #f38181
-    -webkit-transition: .7s
-    -o-transition: .7s
+    border-right: 1px solid $red
+    color: $red
     transition: .7s
-    display: -webkit-flex
-    display: -ms-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
     font-size: 1.8em
-
     &:focus, &:hover
-      background: #f38181
-      -webkit-transition: .7s
-      -o-transition: .7s
+      background: $red
       transition: .7s
       color: #fff
 
@@ -1123,70 +802,36 @@ a .item-list
 
 .description-block
   padding-top: 20px
-  -webkit-transition: .4s
-  -o-transition: .4s
   transition: .4s
 
 .who-we-are-item:hover > .description-block
-  -webkit-transform: translate(3px, 3px)
-  -ms-transform: translate(3px, 3px)
   transform: translate(3px, 3px)
-  -webkit-transition: .4s
-  -o-transition: .4s
   transition: .4s
 
 .logos
   padding-bottom: 50px
 
 .logos-wrapper
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
   flex-direction: row
-  -webkit-box-pack: justify
-  -webkit-justify-content: space-between
-  -ms-flex-pack: justify
   justify-content: space-between
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-  -webkit-align-content: flex-start
-  -ms-flex-line-pack: start
   align-content: flex-start
 
 .logo-item
   height: 125px
   min-width: 125px
-  background-image: url(../img/Company-logos.png)
-  -webkit-background-size: cover
+  background-image: url(../../public/img/Company-logos.png)
   background-size: cover
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
 
 .smaller-logo-item
   height: 110px
   width: 110px
-  background-image: url(../img/Company-logos.png)
+  background-image: url(../../public/img/Company-logos.png)
   background-position: 0 -9px
 
 .smaller-2
@@ -1204,30 +849,18 @@ a .item-list
 .logo-item
   &:first-child
     background-image: none
-
   &:nth-child(2)
     background-position: -205px 0
-
   &:nth-child(3)
     background-position: -405px 0
-
   &:nth-child(4)
     background-position: -625px 0
-
   &:nth-child(5), &:nth-child(6)
     background-image: none
 
 .gallery-flex
-  display: -webkit-box
-  display: -webkit-flex
-  display: -ms-flexbox
   display: flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
   position: relative
 
@@ -1235,37 +868,19 @@ a .item-list
   height: 400px
   width: 25%
   background: #ccc
-  -webkit-background-size: cover
   background-size: cover
   position: relative
-
   &:hover .block-hover-gallery
     opacity: 1
 
 .block-hover-gallery
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-  -webkit-box-orient: vertical
-  -webkit-box-direction: normal
-  -webkit-flex-direction: column
-  -ms-flex-direction: column
   flex-direction: column
-
   h2
     margin: 20px 0
     text-transform: uppercase
-
   p
     color: #fff
     font-size: 1em
@@ -1273,23 +888,18 @@ a .item-list
 
 .gallery-block
   &:first-child
-    background-image: url(../img/man.jpg)
-
+    background-image: url(../../public/img/man.jpg)
   &:nth-child(2)
-    background-image: url(../img/roof.jpg)
-
+    background-image: url(../../public/img/roof.jpg)
   &:nth-child(4)
-    background-image: url(../img/window.jpg)
+    background-image: url(../../public/img/window.jpg)
     margin-left: 25%
-
   &:nth-child(5)
-    background-image: url(../img/bridje.jpg)
-
+    background-image: url(../../public/img/bridje.jpg)
   &:nth-child(6)
-    background-image: url(../img/building.png)
-
+    background-image: url(../../public/img/building.png)
   &:last-child
-    background-image: url(../img/build.jpg)
+    background-image: url(../../public/img/build.jpg)
 
 .last-gallery-block
   left: 25%
@@ -1298,7 +908,7 @@ a .item-list
   height: 800px
   position: absolute
   margin-left: 50%
-  background-image: url(../img/meduse.jpg)
+  background-image: url(../../public/img/meduse.jpg)
 
 .quotes-second
   position: relative
@@ -1308,62 +918,27 @@ a .item-list
   top: 30%
 
 .second-quote__content-wrapper
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: justify
-  -webkit-justify-content: space-between
-  -ms-flex-pack: justify
   justify-content: space-between
   position: relative
 
 .second-quoote__info-wrapper
   width: 73%
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-align: start
-  -webkit-align-items: flex-start
-  -ms-flex-align: start
   align-items: flex-start
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
-  -webkit-box-orient: vertical
-  -webkit-box-direction: normal
-  -webkit-flex-direction: column
-  -ms-flex-direction: column
   flex-direction: column
   margin-left: 2%
-
   .description
     margin-top: 20px
 
 .second-quote-item
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
   flex-direction: row
 
 .section-happy-clients
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 239, 239, 0.85)), color-stop(44%, rgba(239, 239, 239, 0.85)), to(rgba(239, 239, 239, 0.85))), url(../img/montains.png)
-  background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/montains.png)
-  background: -o-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/montains.png)
-  background: linear-gradient(to bottom, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/montains.png)
+  background: linear-gradient(to bottom, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../../public/img/montains.png)
   background-repeat: no-repeat
   background-attachment: fixed
   overflow: hidden
@@ -1374,42 +949,27 @@ a .item-list
 
 .happy-clients
   list-style: none
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
 
 .happy-client
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
   width: 45%
   margin: 0 5% 50px 0
-
   &:nth-child(3), &:nth-child(4)
     margin-bottom: 0
 
 .second-quote__img
   display: block
-  -webkit-border-radius: 100%
   border-radius: 100%
   height: 212px
   width: 212px
-  -o-object-fit: cover
   object-fit: cover
 
 .happy__content
   margin-left: 30px
-
   .figcaption-description, .figcaption-item
     text-align: left
-
   .line-pink
     margin: 20px 0
 
@@ -1423,24 +983,12 @@ a .item-list
 
 .latest-blog-wrapper
   width: 100%
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-justify-content: space-around
-  -ms-flex-pack: distribute
   justify-content: space-around
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
-
   a
     color: #333
-    -webkit-transition: color .5s
-    -o-transition: color .5s
     transition: color .5s
-
     &:hover
       color: #666
 
@@ -1450,13 +998,12 @@ a .item-list
 .blog__image
   height: 250px
   position: relative
-  -webkit-background-size: cover
   background-size: cover
 
 .blog__date
   position: absolute
   bottom: 10px
-  background: #95e1d3
+  background: $blue
   left: -10px
 
 .blog__h5
@@ -1487,28 +1034,14 @@ a .item-list
 
 .blog__feedback
   padding: 20px 0
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
 
 .views__img
   width: 100%
 
 .views
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
 
 .views__number
@@ -1518,38 +1051,21 @@ a .item-list
   margin-left: 20px
 
 .container--map
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-orient: vertical
-  -webkit-box-direction: normal
-  -webkit-flex-direction: column
-  -ms-flex-direction: column
   flex-direction: column
-  -webkit-box-pack: center
-  -webkit-justify-content: center
-  -ms-flex-pack: center
   justify-content: center
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
 
 .map__h2
   text-transform: uppercase
   font-size: 1.5em
-  color: #f38181
+  color: $red
   font-weight: 600
   margin: 20px 0
   font-family: Montserrat, sans-serif
 
 .map
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 239, 239, 0.85)), color-stop(44%, rgba(239, 239, 239, 0.85)), to(rgba(239, 239, 239, 0.85))), url(../img/map.png)
-  background: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/map.png)
-  background: -o-linear-gradient(top, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/map.png)
-  background: linear-gradient(to bottom, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../img/map.png)
+  background: linear-gradient(to bottom, rgba(239, 239, 239, 0.85) 0, rgba(239, 239, 239, 0.85) 44%, rgba(239, 239, 239, 0.85) 100%), url(../../public/img/map.png)
   background-repeat: no-repeat
   overflow: hidden
   width: 100%
@@ -1567,28 +1083,14 @@ a .item-list
   width: 40%
 
 .container--footer
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
   margin-bottom: 50px
-  -webkit-flex-wrap: wrap
-  -ms-flex-wrap: wrap
   flex-wrap: wrap
 
 .logo--footer
   width: 100%
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
-
   h2
     color: #ccc
     font-size: 3em
@@ -1600,7 +1102,6 @@ a .item-list
 
 .footer__p--followers
   font-family: Montserrat, sans-serif
-
   b
     font-weight: 700
     font-size: 1.5em
@@ -1614,86 +1115,48 @@ a .item-list
 
 .follow-us
   padding: 15px 0
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
 
 .socials
   width: 100%
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-orient: horizontal
-  -webkit-box-direction: normal
-  -webkit-flex-direction: row
-  -ms-flex-direction: row
   flex-direction: row
 
 .social
-  color: #95e1d3
+  color: $blue
   margin: 0 10px
   font-size: 1.3em
-  -webkit-transition: .5s
-  -o-transition: .5s
   transition: .5s
-
   &:first-child
     margin-left: 20px
-
   &:focus, &:hover
     color: #31ac96
-    -webkit-transition: .5s
-    -o-transition: .5s
     transition: .5s
 
 .footer__form
   width: 100%
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
-  -webkit-box-pack: start
-  -webkit-justify-content: flex-start
-  -ms-flex-pack: start
   justify-content: flex-start
 
 .footer__email
   padding: 10px
   border: 1px solid #dfdfdf
-  -webkit-transition: .5s
-  -o-transition: .5s
   transition: .5s
   width: 60%
   background-color: transparent
-
   &:focus
     border: 1px solid #f85757
     outline: 0
-    -webkit-transition: .5s
-    -o-transition: .5s
     transition: .5s
-
   &::-webkit-input-placeholder, &::-moz-placeholder, &:-ms-input-placeholder, &::-ms-input-placeholder, &::placeholder
     color: #dfdfdf
     font-style: italic
 
 .footer__submit
-  background: #95e1d3
+  background: $blue
   border: none
-  -webkit-box-shadow: none
   box-shadow: none
   outline: 0
   padding: 10px 50px
@@ -1703,16 +1166,10 @@ a .item-list
   text-transform: uppercase
   font-weight: 600
   color: #fff
-  -webkit-transition: .5s
-  -o-transition: .5s
   transition: .5s
-
   &:hover
     background: #6dd6c3
-    -webkit-transition: .5s
-    -o-transition: .5s
     transition: .5s
-
   &:focus
     outline: 0
 
@@ -1726,31 +1183,18 @@ a .item-list
 
 .footer__blogs
   margin-top: 30px
-
   a
     color: #333
-    -webkit-transition: color .5s
-    -o-transition: color .5s
     transition: color .5s
-
     &:hover
       color: #666
 
 .footer__blog
-  display: -webkit-flex
-  display: -ms-flex
-  display: -webkit-box
-  display: -ms-flexbox
   display: flex
   margin-bottom: 30px
-  -webkit-box-align: center
-  -webkit-align-items: center
-  -ms-flex-align: center
   align-items: center
-
   &:last-child
     margin: 0
-
   .footer__blog-img
     height: 70px
 
@@ -1765,22 +1209,15 @@ a .item-list
 
 .container--copyright
   padding: 50px 0
-
   .blog__footer-h5
     text-align: center
     margin-left: 0
-
     a
       color: #333
       border-bottom: 1px dotted #333
-      -webkit-transition: .5s
-      -o-transition: .5s
       transition: .5s
-
       &:hover
         color: #666
-        -webkit-transition: .5s
-        -o-transition: .5s
         transition: .5s
         border-bottom: 1px dotted transparent
 
@@ -1794,9 +1231,6 @@ a .item-list
 
 @media screen and (max-width: 1350px)
   .flex-wrap-numbers
-    -webkit-box-align: stretch
-    -webkit-align-items: stretch
-    -ms-flex-align: stretch
     align-items: stretch
   .arrows-position
     width: 100%
@@ -1814,7 +1248,6 @@ a .item-list
   .blog-item
     width: 40%
     margin-bottom: 50px
-
     &:last-child
       margin-bottom: 0
   .gallery-block
@@ -1825,7 +1258,6 @@ a .item-list
   .gallery-block
     &:nth-child(4)
       margin: 0
-
     &:nth-child(2), &:nth-child(5)
       margin-right: 33.3333%
   .last-gallery-block
@@ -1838,12 +1270,10 @@ a .item-list
     bottom: -120px
   .about-us-bs
     margin-bottom: 50px
-
     &:last-child
       margin: 0
   .who-we-are-item
     margin-bottom: 100px
-
     &:last-child
       margin-bottom: 100px
   .flex-box
@@ -1851,7 +1281,6 @@ a .item-list
   .services-block
     width: 50%
     padding: 50px 0 50px 0
-
     &:nth-child(4), &:nth-child(5), &:nth-child(6)
       border-bottom: 1px solid #ccc
       padding: 50px 0
@@ -1861,19 +1290,14 @@ a .item-list
 @media screen and (max-width: 992px)
   #myCarousel-2
     grid-template-columns: 1fr
-    -webkit-align-content: center
-    -ms-flex-line-pack: center
     align-content: center
-
     .slider-2-indicators
       margin-top: 20px
-
     .inner-2 .carousel-item img
       width: 100%
   .spoiler
     &::after
       top: 15px
-
     &.collapsed::after
       top: 20px
   section
@@ -1904,9 +1328,6 @@ a .item-list
     width: 100%
     position: relative
   .logos-wrapper
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
   .logo-item
     margin: 20px 10px
@@ -1916,14 +1337,7 @@ a .item-list
     width: 300px
   .inner-2
     width: 100%
-    display: -webkit-flex
-    display: -ms-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
   .iPad
     width: 60%
@@ -1940,61 +1354,31 @@ a .item-list
   .left, .right
     display: block
   .flex-wrap-numbers
-    -webkit-flex-wrap: wrap
-    -ms-flex-wrap: wrap
     flex-wrap: wrap
-    -webkit-align-content: stretch
-    -ms-flex-line-pack: stretch
     align-content: stretch
   .number
-    -webkit-flex-basis: 200px
-    -ms-flex-preferred-size: 200px
     flex-basis: 200px
     border-bottom: 1px solid #fff
-
     &:nth-child(4)
       border-right: 1px solid #fff
   .logo
-    display: -webkit-flex
-    display: -moz-flex
-    display: -ms-flex
-    display: -o-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
   .about-us-bs
     min-width: 370px
   .carousel-control
-    display: -webkit-flex
-    display: -ms-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
   .slider-2-indicators
     display: block
     position: static
-    -webkit-transform: none
-    -ms-transform: none
     transform: none
     width: 100%
     min-height: 380px
   .inner-2
     position: relative
   .second-slider
-    -webkit-flex-wrap: wrap
-    -ms-flex-wrap: wrap
     flex-wrap: wrap
   .carousel-inner > .item >
   a > img, img
@@ -2007,9 +1391,6 @@ a .item-list
   .inner-2 .item
     width: 100%
   .logo--footer
-    -webkit-box-pack: start
-    -webkit-justify-content: flex-start
-    -ms-flex-pack: start
     justify-content: flex-start
 
 @media screen and (max-width: 860px)
@@ -2018,7 +1399,6 @@ a .item-list
   .number
     &:nth-child(3)
       border-right: 1px solid #fff
-
     &:nth-child(4)
       border-right: none
 
@@ -2034,7 +1414,6 @@ a .item-list
   .gradient
     h1
       font-size: 6em
-
     h2
       font-size: 4em
 
@@ -2046,71 +1425,33 @@ a .item-list
   .section-happy-clients, .section-unique-design
     background-attachment: scroll
   .latest-blog-wrapper
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
   .blog-item
     width: 50%
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
   .happy-client
     width: 100%
     margin: 0
     margin-bottom: 50px
-
     &:nth-child(3), &:nth-child(4)
       margin-bottom: 50px
-
     &:last-child
       margin: 0
   .second-arrows-position
     top: 50%
   .second-quote__content-wrapper
-    -webkit-flex-wrap: wrap
-    -ms-flex-wrap: wrap
     flex-wrap: wrap
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
   .second-quote__img-wrapper
     width: 50%
     margin-bottom: 50px
   .quote-carousel
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
     width: 100%
   .blog-item
@@ -2122,13 +1463,9 @@ a .item-list
   .second-quote__img
     margin-bottom: 20px
   .citations .arrows-position
-    -webkit-transform: translate(-50%, 50px)
-    -ms-transform: translate(-50%, 50px)
     transform: translate(-50%, 50px)
-
     .left.carousel-control-3
       left: 50px
-
     .right.carousel-control-3
       right: 50px
   .citaiton_img
@@ -2143,7 +1480,6 @@ a .item-list
   .logo
     position: static
     width: 20%
-
     h2
       font-size: 1em
   .header
@@ -2155,8 +1491,6 @@ a .item-list
   .navbar
     position: static
   .container--header
-    -webkit-transform: none
-    -ms-transform: none
     transform: none
     position: static
     padding: 0 20px
@@ -2169,44 +1503,30 @@ a .item-list
   .navbar-collapse
     width: 100%
     border: none
-    -webkit-box-shadow: none
     box-shadow: none
     outline: 0
   .navbar
     width: 80%
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
   .navbar-nav
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
     height: auto
     width: 100%
     margin: 0
     outline: 0
-    -webkit-box-shadow: none
     box-shadow: none
     border: none
-
     &:active, &:focus
       margin: 0
-      -webkit-box-shadow: none
       box-shadow: none
       border: none
-
     li
       width: 90%
-
       a
         padding: 20px
   .gradient
     h1
       font-size: 7em
-
     h2
       font-size: 4em
   .line, .line-pink
@@ -2219,7 +1539,6 @@ a .item-list
 @media screen and (max-width: 700px)
   .services-block
     width: 100%
-
     &:nth-child(4), &:nth-child(5)
       border-bottom: 1px solid #ccc
 
@@ -2238,7 +1557,6 @@ a .item-list
   .citations .arrows-position
     .left.carousel-control-3
       left: 20px
-
     .right.carousel-control-3
       right: 20px
   .who-we-are-item
@@ -2250,64 +1568,29 @@ a .item-list
   .number
     &:nth-child(2), &:nth-child(4)
       border-right: 1px solid #fff
-
     &:nth-child(3)
       border-right: none
 
 @media screen and (max-width: 560px)
   .happy-client
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
   .happy__content
-    display: -webkit-flex
-    display: -ms-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
-    -webkit-box-pack: center
-    -webkit-justify-content: center
-    -ms-flex-pack: center
     justify-content: center
-    -webkit-box-align: center
-    -webkit-align-items: center
-    -ms-flex-align: center
     align-items: center
     margin: 0
-
     .happy__p
       width: 80%
-
     .figcaption-description, .figcaption-item
       text-align: center
   .blog__instagram, .footer__block, .footer__blog-block
     width: 95%
   .follow-us
     width: 100%
-    display: -webkit-flex
-    display: -ms-flex
-    display: -webkit-box
-    display: -ms-flexbox
     display: flex
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -webkit-flex-direction: column
-    -ms-flex-direction: column
     flex-direction: column
   .footer__follow
     width: 100%
@@ -2320,7 +1603,6 @@ a .item-list
   .gradient
     h1
       font-size: 6em
-
     h2
       font-size: 4em
   .navigation
@@ -2333,7 +1615,6 @@ a .item-list
   .gradient
     h1
       font-size: 5em
-
     h2
       font-size: 3.5em
   .flex-wrap
@@ -2347,7 +1628,6 @@ a .item-list
   .gradient
     h1
       font-size: 4em
-
     h2
       font-size: 3em
 
@@ -2355,27 +1635,23 @@ a .item-list
   .gradient
     h1
       font-size: 4em
-
     h2
       font-size: 3em
   .container-fluid
     padding: 0
   .about-us-bs
     min-width: 340px
-    -webkit-box-sizing: border-box
     box-sizing: border-box
 
 @media screen and (max-width: 360px)
   .about-us-bs
     min-width: 300px
-    -webkit-box-sizing: border-box
     box-sizing: border-box
 
 @media screen and (max-width: 320px)
   .gradient
     h1
       font-size: 3.7em
-
     h2
       font-size: 2.7em
   .flex-wrap
