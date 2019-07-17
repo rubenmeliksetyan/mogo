@@ -6,7 +6,8 @@
 
 require('./bootstrap');
 require('./custom');
-require('./myscript');
+require('./common');
+
 $.ajaxSetup({
     headers: {
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

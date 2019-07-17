@@ -1,38 +1,25 @@
-<header>
-    <div class="header-top">
-        <div class="mogo">
-            <a href="#">MoGo</a>
+<header class="header">
+    <div class="container container--header">
+        <div class="logo">
+            <h2>MoGo</h2>
         </div>
-        <nav class="header-links">
-            <a href="#about">about</a>
-            <a href="#service">service</a>
-            <a href="#work">work</a>
-            <a href="">blog</a>
-            <a href="">contact</a>
-            <a href="">contact</a>
-            <a href="">icon</a>
-            <a href="">icon</a>
+        <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#main-nav">
+                <span class="menu-icon-bar"></span>
+                <span class="menu-icon-bar"></span>
+                <span class="menu-icon-bar"></span>
+            </button>
+            <div id="main-nav" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li><a href="#about" class="nav-item nav-link active">About</a></li>
+                    <li><a href="#service" class="nav-item nav-link">Service</a></li>
+                    <li><a href="#work" class="nav-item nav-link">Work</a></li>
+                    <li><a href="#blog" class="nav-item nav-link">Blog</a></li>
+                    <li><a href="#contact" class="nav-item nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-item nav-link"><i class="fas fa-shopping-cart"></i></a></li>
+                    <li><a href="#" class="nav-item nav-link"><i class="fas fa-search"></i></a></li>
+                </ul>
+            </div>
         </nav>
-    </div>
-    <div class="container banner">
-        <div class="creative">
-            <p>Creative Template</p>
-        </div>
-        <div class="welcome">
-            <p>welcome to mogo</p>
-
-        </div>
-        <hr>
-
-        <div>
-            <a href="" class="banner-learn">learn more</a>
-        </div>
-        <div class="header-bottom">
-                <a href="">01 intro</a>
-                <a href="">02 work</a>
-                <a href="">03 about</a>
-                <a href="">04 contacts</a>
-        </div>
-
     </div>
 </header>

@@ -36910,7 +36910,7 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! ./custom */ "./resources/js/custom.js");
 
-__webpack_require__(/*! ./myscript */ "./resources/js/myscript.js");
+__webpack_require__(/*! ./common */ "./resources/js/common.js");
 
 $.ajaxSetup({
   headers: {
@@ -36998,6 +36998,18 @@ if (token) {
 
 /***/ }),
 
+/***/ "./resources/js/common.js":
+/*!********************************!*\
+  !*** ./resources/js/common.js ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+$('.carousel').carousel();
+new WOW().init();
+
+/***/ }),
+
 /***/ "./resources/js/custom.js":
 /*!********************************!*\
   !*** ./resources/js/custom.js ***!
@@ -37006,44 +37018,6 @@ if (token) {
 /***/ (function(module, exports) {
 
 
-
-/***/ }),
-
-/***/ "./resources/js/myscript.js":
-/*!**********************************!*\
-  !*** ./resources/js/myscript.js ***!
-  \**********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// document.getElementsByClassName('prev').addEventListener('click', plusSlides(-1));
-// document.getElementsByClassName('next').addEventListener('click', plusSlides(1));
-// var slideIndex = 1;
-// showSlides(slideIndex);
-//
-// function plusSlides(n) {
-//     showSlides(slideIndex += n);
-// }
-//
-// function currentSlide(n) {
-//     showSlides(slideIndex = n);
-// }
-//
-// function showSlides(n) {
-//     var i;
-//     var slides = document.getElementsByClassName("mySlides");
-//     var dots = document.getElementsByClassName("dot");
-//     if (n > slides.length) {slideIndex = 1}
-//     if (n < 1) {slideIndex = slides.length}
-//     for (i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//     }
-//     for (i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-//     slides[slideIndex-1].style.display = "block";
-//     dots[slideIndex-1].className += " active";
-// }
 
 /***/ }),
 

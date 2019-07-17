@@ -10,6 +10,7 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
     },
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.9.0",
         "axios": "^0.19",
         "bootstrap": "^4.3.1",
         "browser-sync": "^2.26.7",
@@ -26,6 +27,7 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
+        "font-awesome": "^4.7.0",
         "get-google-fonts": "^1.2.0",
         "tailwindcss": "^1.0.4"
     }

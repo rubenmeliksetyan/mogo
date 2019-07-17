@@ -1,67 +1,51 @@
-<div class="slideshow-container">
-
-    <div class="mySlides">
-        <div class="quote-quote">
-            <img src="{{ asset('img/SPEECH 4.png') }}" class="slider-img" alt="">
-            <div class="quote-content">
-                <q class="slider-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dignissimos
-                    doloremque dolores doloribus explicabo fugiat,</q>
-                <p class="author">- John Keats</p>
+<section class="citations">
+    <div class="container container--quote">
+        <div id="myCarousel-3" class="carousel slide quote-carousel" data-ride="carousel">
+            <img class="citaiton_img" src="{{ asset('img/SPEECH%204.png') }}" alt="Speech">
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item citaiton active">
+                    <p>“Peter's voice was inspired by the security guards that MacFarlane heard at his school.”</p>
+                    <div class="description">
+                        <i class="line-pink citation-line"></i>
+                        <h4>Peter Griffin</h4>
+                    </div>
+                </div>
+                <div class="carousel-item citaiton">
+                    <p>“In the shorts and earlier episodes, Castellaneta voiced Homer with a loose impression of Walter
+                        Matthau; however.”</p>
+                    <div class="description">
+                        <i class="line-pink citation-line"></i>
+                        <h4>Homer Simpson</h4>
+                    </div>
+                </div>
+                <div class="carousel-item citaiton">
+                    <p>“The character has been portrayed by numerous actors. His cinematic appearances span the first
+                        six Star Wars films.”</p>
+                    <div class="description">
+                        <i class="line-pink citation-line"></i>
+                        <h4>Darth Vaider</h4>
+                    </div>
+                </div>
+                <div class="carousel-item citaiton">
+                    <p>“At ten years old, Bart is the eldest child and only son of Homer and Marge, and the brother of
+                        Lisa and Maggie.”</p>
+                    <div class="description">
+                        <i class="line-pink citation-line"></i>
+                        <h4>Bart Simpson</h4>
+                    </div>
+                </div>
             </div>
         </div>
-
     </div>
-
-    <div class="mySlides">
-        <div class="quote-quote">
-            <img src="{{ asset('img/SPEECH 4.png') }}" class="slider-img" alt="">
-            <div class="quote-content">
-                <q class="slider-text"> But man is not made for defeat. A man can be destroyed but not defeated.</q>
-                <p class="author">- Thomas A. Edison</p>
-            </div>
-        </div>
+    <div class="arrows-position">
+        <a class="left carousel-control carousel-control-3" href="#myCarousel-3" role="button" data-slide="prev">
+            <img src="{{ asset('img/arrow.png') }}" alt="arrow">
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control carousel-control-3" href="#myCarousel-3" role="button" data-slide="next">
+            <img src="{{ asset('img/arrow.png') }}" alt="arrow">
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-
-    <div class="mySlides">
-        <div class="quote-quote">
-            <img src="{{ asset('img/SPEECH 4.png') }}" class="slider-img" alt="">
-            <div class="quote-content">
-                <q class="slider-text"> I have not failed. I've just found 10,000 ways that won't work.,</q>
-                <p class="author">- Ernest Hemingway</p>
-            </div>
-        </div>
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-
-<script>
-    var slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-            slideIndex = 1
-        }
-        if (n < 1) {
-            slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-    }
-</script>
+</section>
